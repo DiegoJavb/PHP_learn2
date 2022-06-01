@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    text-align: center;
+    color: whitesmoke;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    padding-top: 10px;
+    color: whitesmoke;
+}
+
+.contenedor {
+    background-image: url(../images/home-office-gf0734ba00_1920.jpg);
+    background-size: cover;
+    height: 700px;
+}
+
+.seccion_tarjeta {
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(45, 117, 185, 0.6);
+    border-radius: 25px;
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+}
+
+.submit {
+    height: 40px;
+    width: 200px;
+}
