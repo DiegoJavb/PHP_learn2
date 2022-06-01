@@ -13,7 +13,7 @@
 
     <div class="contenedor">
         <nav>
-            <h1>Bienvenido</h1>
+            <h1>Bienvenida</h1>
         </nav>
         <div class="seccion_tarjeta">
             <div class="tarjeta">
