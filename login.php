@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/login.css">
     <title>Login</title>
 </head>
 
@@ -17,12 +17,12 @@
         </nav>
         <div class="seccion_tarjeta">
             <div class="tarjeta">
-                <form action="validacion.php" method="post">
+                <form action="validacion_login.php" method="post">
                     <h2>Ingresa</h2><br><br>
                     <label for="usuario">Usuario</label><br>
-                    <input type="text" name="usuario" require><br><br>
+                    <input type="text" name="usuario" required><br><br>
                     <label for="contraseña">Contraseña</label><br>
-                    <input type="contraseña" name="contrasena" require><br><br>
+                    <input type="contraseña" name="contrasena" required><br><br>
                     <div style="height: 30px;"></div>
                     <input class="submit" type="submit" value="Ingrese"><br><br>
                     <p>Aun no tienes cuenta registrate <a href="registro.php">Aquí</a></p>
