@@ -1,0 +1,66 @@
+/* combninacion de colores
+    071013
+    EB5160
+    B7999C
+    AAAAAA
+    DFE0E2
+*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenedor {
+    background-color: #071013;
+    color: blanchedalmond;
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "header header header"
+        "section section derecha"
+        "article article article";
+}
+
+header {
+    grid-area: header;
+    background-color: #EB5168;
+    text-align: right;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.lista1 {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.lista1 li {
+    list-style: none;
+}
+
+.lista1 li a {
+    text-decoration: none;
+    color: black;
+}
+
+.derecha {
+    grid-area: derecha;
+    background-color: #AAAAAA;
+}
+
+section {
+    grid-area: section;
+    background-color: #B7999C;
+}
+
+article {
+    grid-area: article;
+    background-color: #DFE0E2;
+}
