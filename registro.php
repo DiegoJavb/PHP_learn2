@@ -25,7 +25,7 @@
                     <input type="email" name="email" required><br><br>
                     <label for="usuario">Usuario</label><br>
                     <input type="text" name="usuario" required><br><br>
-                    <label for="contraseña">Contraseña</label><br>
+                    <label for="contrasena">Contraseña</label><br>
                     <input type="text" name="contrasena" required><br><br>
                     <div style="height: 30px;"></div>
                     <input class="submit" type="submit" value="Registrate"><br><br>

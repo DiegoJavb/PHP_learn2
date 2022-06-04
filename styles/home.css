@@ -12,7 +12,7 @@
 
 .contenedor {
     background-color: #071013;
-    color: blanchedalmond;
+    color: black;
     width: 100%;
     display: grid;
     grid-gap: 30px;
@@ -31,6 +31,8 @@ header {
     font-size: 2em;
     font-weight: bold;
     padding: 10px;
+    max-width: 100%;
+    min-width: 400px;
 }
 
 .lista1 {
@@ -53,14 +55,47 @@ header {
 .derecha {
     grid-area: derecha;
     background-color: #AAAAAA;
+    margin-right: 20px;
+    padding: 20px;
 }
 
 section {
     grid-area: section;
     background-color: #B7999C;
+    margin-left: 20px;
+    padding: 20px;
 }
 
 article {
     grid-area: article;
     background-color: #DFE0E2;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header header header"
+            "section section section"
+            "derecha derecha derecha"
+            "article article article";
+
+    }
+
+    section {
+        margin-right: 50px;
+    }
+
+    article {
+        margin-right: 50px;
+    }
+
+    .derecha {
+        margin-right: 50px;
+        margin-left: 20px;
+    }
 }
