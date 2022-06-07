@@ -21,7 +21,7 @@
     grid-template-areas:
         "header header header"
         "section section derecha"
-        "article article article";
+        "article article derecha";
 }
 
 header {
@@ -70,8 +70,19 @@ article {
     grid-area: article;
     background-color: #DFE0E2;
     margin-left: 20px;
-    margin-right: 20px;
     padding: 20px;
+}
+
+.section1 {
+    width: 100%;
+}
+
+.article1 {
+    width: 100%;
+}
+
+.derecha1 {
+    width: 100%;
 }
 
 @media screen and (max-width: 600px) {

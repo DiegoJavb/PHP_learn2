@@ -30,6 +30,7 @@
             </nav>
         </header>
         <nav class="derecha">
+            <img src="./images/teclado.jpg" alt="" class="derecha1">
             <h2 class="nav">Noticias</h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit
             quos vel cum sed, illo repellat est voluptates exercitationem, quod nihil magnam
@@ -47,7 +48,8 @@
             architecto quas sit, delectus quam aliquam optio esse autem quia
             velit itaque! Eaque impedit aspernatur harum error animi enim inventore!
         </nav>
-        <section class="section1">
+        <section>
+            <img src="./images/computer.jpg" alt="computer" class="section1">
             <h2 class="section">Novedades</h2>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
             provident eaque doloribus rerum hic esse error distinctio ipsa exercitationem
@@ -66,7 +68,8 @@
         </section>
 
 
-        <article class="article1">
+        <article>
+            <img src="./images/taza_roja.jpg" alt="" class="article1">
             <h2>Curiosidades</h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ut amet,
             nihil quas asperiores explicabo. Tenetur maxime est pariatur rem dolores
