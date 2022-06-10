@@ -18,13 +18,13 @@
                         <a href="#">Inicio</a>
                     </li>
                     <li>
-                        <a href="#">Contactos</a>
+                        <a href="./contacto.php">Contactos</a>
                     </li>
                     <li>
-                        <a href="#">Sobre Nosotros</a>
+                        <a href="./nosotros.php">Sobre Nosotros</a>
                     </li>
                     <li>
-                        <a href="#">Usuarios</a>
+                        <a href="./usuario.php">Usuarios</a>
                     </li>
                 </ul>
             </nav>

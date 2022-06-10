@@ -1,0 +1,137 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenedor {
+    background-color: #071013;
+    color: white;
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "header header header"
+        "oportunidades section section"
+        "productos article article"
+        "footer footer footer";
+
+}
+
+header {
+    grid-area: header;
+    background-image: url("../images/teclado.jpg");
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    max-width: 100%;
+    min-width: 400px;
+}
+
+.titulo {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista1 {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.lista1 li {
+    list-style: none;
+}
+
+.lista1 li a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    padding-left: 30px;
+}
+
+p {
+    padding-right: 30px;
+    width: 700px;
+    text-align: justify;
+}
+
+.oportunidades {
+    grid-area: oportunidades;
+    width: 500px;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos {
+    grid-area: productos;
+    width: 500px;
+    height: 100%;
+}
+
+h2 {
+    color: chocolate;
+    font-size: 2em;
+}
+
+section {
+    grid-area: section;
+}
+
+article {
+    grid-area: article;
+}
+
+footer {
+    color: coral;
+    grid-area: footer;
+    text-align: center;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        width: 350px;
+    }
+
+    .contenedor {
+        width: 350px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            "header"
+            "oportunidades"
+            "section"
+            "productos"
+            "article"
+            "footer";
+    }
+}
