@@ -1,3 +1,6 @@
+<?php
+include("db_conection.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,14 +32,15 @@
                 </ul>
             </nav>
         </header>
+        <h1>Usuarios</h1>
         <div class="info_user">
             <table>
                 <tr>
-                    <td>id Usuario</td>
+                    <td>id_Usuario</td>
                     <td>Nombre</td>
+                    <td>Email</td>
                     <td>Usuario</td>
                     <td>Contraseña</td>
-                    <td>Email</td>
                 </tr>
                 <?php
                 $consulta = "SELECT * FROM usuarios";
@@ -46,11 +50,16 @@
 
                 ?>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><?php echo $resultado['user_id'] ?>
+                        </td>
+                        <td><?php echo $resultado['user_name'] ?>
+                        </td>
+                        <td><?php echo $resultado['user_email'] ?>
+                        </td>
+                        <td><?php echo $resultado['user_nick'] ?>
+                        </td>
+                        <td><?php echo $resultado['user_password'] ?>
+                        </td>
                     </tr>
                 <?php
                 }
